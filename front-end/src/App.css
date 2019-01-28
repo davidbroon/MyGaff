@@ -54,3 +54,14 @@ map {
   padding: 10px;
   text-align: center;
 }
+.search-bar {
+  border: 1px solid cadetblue;
+  background-color: antiquewhite;
+  opacity: 0.8;
+  width: 50%;
+  padding:10px;
+  text-align: center; 
+}
+.capt {
+  border: 5px, solid, black;
+}

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Grid, Cell, Layout, Navigation } from "react-mdl";
+import { Grid, Cell, Layout, Navigation, Textfield } from "react-mdl";
 
 class Landing extends Component {
   state = {};
@@ -40,6 +40,12 @@ class Landing extends Component {
                 <Link className="morelinklanding" to="/more">
                   More
                 </Link>
+                <Textfield className="search-bar"
+                  onChange={() => {}}
+                  label="Expandable Input"
+                  expandable
+                  expandableIcon="search"
+              />
               </Navigation>
               
             </Cell>
