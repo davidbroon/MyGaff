@@ -46,6 +46,7 @@ class App extends Component {
               <Link to="/more">More</Link>
             </Navigation>
           </Drawer>
+  
           <Content>
             <div className="page-content" />
             <Main />
@@ -54,8 +55,10 @@ class App extends Component {
           <Footer size="mini" style={{ height: 5 }}>
             <FooterSection type="left" logo="Title">
               <FooterLinkList>
-                <a href="/help">Help</a>
-                <a href="/privacy">Privacy & Terms</a>
+                <Navigation>
+                  <Link to="/help">Help</Link>
+                  <Link to="/privacy">Privacy & Terms</Link>
+                </Navigation>
               </FooterLinkList>
             </FooterSection>
           </Footer>
