@@ -13,6 +13,7 @@ import {
   Navigation
 } from "react-mdl";
 import Captain from "../../images/headshots/capt.jpeg";
+import SteelMan from "../../images/headshots/steelman.jpeg"
 
 class Agents extends Component {
   state = {};
@@ -27,7 +28,8 @@ class Agents extends Component {
               color: "#fff",
               height: "176px",
               background:
-              "url(https://pmcdeadline2.files.wordpress.com/2014/04/captain-america-wallpaper-batman-vs-superman-avengers-2-captain-america-2-spider-man-2-is-this-the-golden-age-of-superhero-movies__140405050134.jpeg) center / cover", 
+              `url(${Captain}) center / cover`,
+              
                 
             }}
             
@@ -57,7 +59,7 @@ class Agents extends Component {
             color: "#fff",
             height: "176px",
             background:
-            "url(https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.themoviethemesong.com%2Fwp-content%2Fuploads%2F2014%2F06%2FSuperman-1.jpg&f=1) center / cover", 
+            `url(${SteelMan}) center / cover`, 
               
           }}
         />

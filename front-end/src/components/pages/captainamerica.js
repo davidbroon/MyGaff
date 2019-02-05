@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
+import steveRogers from "../../images/headshots/steverogers.jpg"
 
 class CaptainAmerica extends Component {
   render() {
@@ -9,7 +10,7 @@ class CaptainAmerica extends Component {
           <Cell col={6}> 
             <h2>Steve Rogers</h2>
             <img
-                src="https://i.pinimg.com/736x/3f/45/20/3f4520050c77f156ed0ed22216d0b8f8.jpg"
+                src={steveRogers}
                 alt="avatar"
                 style={{height: '250px'}} />
             <p style={{width:'75%', margin: 'auto', paddingTop: '1em'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit libero volutpat sed cras ornare arcu. Et tortor at risus viverra adipiscing at in tellus integer. Ut ornare lectus sit amet est placerat in egestas.</p>

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
+import ClarkKent from "../../images/headshots/clarkkent.jpeg"
 
 class Superman extends Component {
   render() {
@@ -9,7 +10,7 @@ class Superman extends Component {
           <Cell col={6}> 
             <h2>Clark Kent</h2>
             <img
-                src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fmarciokenobi.files.wordpress.com%2F2012%2F09%2Fclark_kent.jpg&f=1"
+                src={ClarkKent}
                 alt="avatar"
                 style={{height: '250px'}} />
             <p style={{width:'75%', margin: 'auto', paddingTop: '1em'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit libero volutpat sed cras ornare arcu. Et tortor at risus viverra adipiscing at in tellus integer. Ut ornare lectus sit amet est placerat in egestas.</p>

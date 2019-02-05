@@ -60,7 +60,6 @@ map {
 }
 .capt {
   border: 5px, solid, black;
-  background-image: `url("./images/headshots/capt.jpeg")`;
 }
 .contact-captain-body {
   margin: auto;
@@ -95,4 +94,60 @@ map {
 .contact-captain-list {
   font-size: 66px;
   
+}
+.contact-superman-body {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;  
+}
+.contact-superman-grid{
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 550px;
+  background: white;
+  color: black;
+  margin-bottom: 20px;
+}
+.contact-superman-grid h2{
+  font-family: 'Anton', sans-serif;
+
+}
+.contact-superman-grid p{
+  font-family:'Oxygen', sans-serif;
+  font-weight: bold;
+}
+.contact-superman-grid hr{
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+.contact-superman-list {
+  font-size: 66px;
+  
+}
+.privacy-grid{
+  text-align: center;
+  justify-content: center;
+  background: white;
+  color: black;
+  margin-bottom: 20px;
+}
+.privacy-grid h2{
+  text-align: left;
+}
+.privacy-grid hr{
+  border-top: 3px solid black;
+  width: 90%;
+  margin: auto;
+}
+.privacy-grid p{
+  font-family:'Oxygen', sans-serif;
+}
+.footerlink{
+  font-family:'Oxygen', sans-serif;
+  padding-right: 20px;
 }

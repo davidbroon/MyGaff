@@ -13,12 +13,14 @@ import {
 import Main from "./components/main";
 import { Link } from "react-router-dom";
 
+
 class App extends Component {
   render() {
     return (
       <div>
         <Layout fixedHeader>
-          <Header title="My Gaff" scroll style={{ color: "white" }}>
+          <Header title="My Gaff" scroll style={{ color: "white"
+        }}>
             <Navigation>
               <Link className="homelink" to="/home">
                 <i
@@ -53,10 +55,11 @@ class App extends Component {
           </Content>
 
           <Footer size="mini" style={{ height: 5 }}>
-            <FooterSection type="left" logo="Title">
+            <FooterSection type="left" logo="My Gaff">
               <FooterLinkList>
                 <Navigation>
-                  <Link to="/help">Help</Link>
+                  <Link className="footerlink" to="/help">Help</Link>
+                  
                   <Link to="/privacy">Privacy & Terms</Link>
                 </Navigation>
               </FooterLinkList>

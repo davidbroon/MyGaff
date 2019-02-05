@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Grid, Cell, Layout, Navigation, Textfield } from "react-mdl";
+import backgroundImage from '../../images/buildings/streethighrise.jpg'
+import headerLogo from "../../images/logos/homesweethome.png"
 
 class Landing extends Component {
   state = {};
@@ -16,7 +18,7 @@ class Landing extends Component {
         <Layout
           style={{
             background:
-              "url(http://www.getmdl.io/assets/demos/transparent.jpg) center / cover",
+              `url(${backgroundImage}) center / cover`,
             height: "100%",
             width: "100%"
           }}
@@ -26,6 +28,7 @@ class Landing extends Component {
               <div className="banner-text">
                 <h1>Find your way home</h1>
                 <hr/> 
+                
                 </div>
                 
                 <Navigation className="banner-nav">
