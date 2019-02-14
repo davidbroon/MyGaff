@@ -6,21 +6,26 @@ import org.springframework.data.mongodb.core.index.IndexDirection;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "Properties")
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+@Document(collection = "fruits")
 public class Properties {
 	@Id
-	private String id;
+	private String id; 
+	@JsonProperty  
+	private String image;
 	private String HomeName;
 	private Address Address;
 	private Date DatePosted;
 	@Indexed(direction = IndexDirection.ASCENDING)
 	private String Price;
 	
-	public Properties(String HomeName, Address Address, Date DatePosted, String Price) {
+	public Properties(String HomeName, Address Address, Date DatePosted, String Price, String image) {
 		this.HomeName = HomeName;
 		this.Address = Address;
 		this.DatePosted = DatePosted;
 		this.Price = Price;
+		this.image = image;
 	}
 	
 
@@ -42,6 +47,10 @@ public class Properties {
 
 	public String getPrice() {
 		return Price;
+	}
+	
+	public String getImage() {
+		return image;
 	}
 	
 }

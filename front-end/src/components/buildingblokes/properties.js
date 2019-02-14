@@ -7,9 +7,15 @@ import {
   CardText,
   CardTitle,
   CardActions,
-  Button
+  Button,
+  Spinner,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
+  Navigation
 } from "react-mdl";
-
+import { Link } from 'react-router-dom';
 class Properties extends React.Component {
   constructor(props) {
     super(props);
@@ -17,6 +23,8 @@ class Properties extends React.Component {
       properties: [],
       isLoaded: false
     };
+    this.handleOpenDialog = this.handleOpenDialog.bind(this);
+    this.handleCloseDialog = this.handleCloseDialog.bind(this);
   }
 
   callProperties = () => {
@@ -36,48 +44,121 @@ class Properties extends React.Component {
     this.callProperties();
   }
 
+  handleOpenDialog() {
+    this.setState({
+      openDialog: true
+    });
+  }
+
+  handleCloseDialog() {
+    this.setState({
+      openDialog: false
+    });
+  }
+
   render() {
-    const { isLoaded, properties } = this.state;
+    const { isLoaded } = this.state;
 
     if (!isLoaded) {
-      return <div>Loading...</div>;
+      return (
+        <div>
+          <Spinner singleColor />
+        </div>
+      );
     } else {
       return (
         <div>
           {this.state.properties.map(p => (
-            
-              <div>
+            <div key={p.id}>
               <Grid className="demo-grid-2">
                 <Cell col={2}>
                   <Card
                     shadow={0}
-                    style={{ width: "320px", height: "320px", margin: "auto" }}
+                    style={{
+                      width: "300px",
+                      height: "400px",
+                      margin: "auto",
+                      position: "center"
+                    }}
                   >
                     <CardTitle
-                      expand
+                      className="cardTitle"
                       style={{
-                        color: "#fff",
-                        background:
-                          "url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC"
+                        background: `url(${p.image})`,
+                        width: "100%",
+                        height: "100%",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center center",
+                        backgroundsize: "cover",
+                        height: "80%"
                       }}
-                      ><h3>{p.homeName}</h3></CardTitle>
+                    />
                     <CardText>
-                    {p.address.line1}, {p.address.city}, {p.address.state},{" "}
-                    {p.address.zip}
+                      <b>{p.homeName}</b> || <b>{p.price}</b>
+                     
                     </CardText>
+                    <Navigation>
                     <CardActions border>
-                      <Button colored>View Updates</Button>
+                        <Button onClick={this.handleOpenDialog} colored
+                        raised
+                        ripple style={{position:"center"}}>
+                          More Information
+                        </Button> 
                     </CardActions>
+                  </Navigation>
+                    <Dialog
+                      col={12}
+                      className="dialog"
+                      open={this.state.openDialog}
+                      style={{ overflowX: "auto", width:"50%" }}
+                    >
+                      <DialogTitle
+                        style={{
+                          background: `url(${p.image})`,
+                          width: "100%",
+                          height: "100%",
+                          backgroundRepeat: "no-repeat",
+                          position: "relative",
+                          backgroundPosition: "center center",
+                          backgroundsize: "fill",
+                          height: "200px"
+                        }}
+                      />
+                      <DialogContent>
+                        <center><b>{p.homeName}</b>
+                        <p>
+                          {p.address.line1}, {p.address.city}, {p.address.state}
+                          , {p.address.zip}
+                          <br />
+                          {p.price}
+                          <br />
+                          Bio: Lorem ipsum dolor sit amet, consectetur
+                          adipiscing elit. Suspendisse in ornare quam, eget
+                          elementum eros. Quisque vel semper ligula, ac commodo
+                          libero. Maecenas tincidunt quam massa, interdum
+                          rhoncus tellus
+                        </p>
+                        </center>
+                      </DialogContent>
+                      <Navigation style={{float:"right"}}>
+                      
+                       <DialogActions fullWidth>
+                        <Button type="button"><Link to="/agents" style={{color:"black"}}>
+                          Find an Agent to Help
+                          </Link>
+                        </Button>
+                        <Button type="button" onClick={this.handleCloseDialog}>
+                          Close
+                        </Button>
+                      </DialogActions>
+                      
+                      </Navigation>
+                    </Dialog>
                   </Card>
                 </Cell>
-                
               </Grid>
             </div>
-          ),
-        
-      
-            
-          )}
+          ))}
         </div>
       );
     }

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Grid, Cell, Layout, Navigation, Textfield } from "react-mdl";
 import backgroundImage from '../../images/buildings/streethighrise.jpg'
-import headerLogo from "../../images/logos/homesweethome.png"
+
 
 class Landing extends Component {
   state = {};
