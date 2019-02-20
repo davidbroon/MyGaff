@@ -6,8 +6,7 @@ import * as api from "../../utils/api";
 class MapQuestComponent extends Component {
   constructor(props) {
     super(props);
-    this.state = { ...props,
-      properties: [] };
+    this.state = { ...props, properties: [] };
   }
 
   render() {
@@ -42,14 +41,14 @@ class MapQuestComponent extends Component {
         icon: {
           primaryColor: "#22407F",
           secondaryColor: "#22407F",
-          size: "lg"
+          size: "md"
         },
         draggable: false,
         text: "Empire State",
         position: "right",
-        subtext: "price",
+        subtext: <a href="/empireState">Open here</a>,
         type: "marker",
-        url: "/superman"
+        url: "superman"
       })
       .addTo(L.mapquest.Map.getMap());
 
@@ -58,12 +57,13 @@ class MapQuestComponent extends Component {
         icon: {
           primaryColor: "#22407F",
           secondaryColor: "#22407F",
-          size: "lg"
+          size: "md"
         },
+        title: "hello",
         draggable: false,
         text: "Statue of Liberty",
         position: "right",
-        subtext:  "money",
+        subtext: "money",
         type: "marker"
       })
       .addTo(L.mapquest.Map.getMap());
@@ -73,7 +73,7 @@ class MapQuestComponent extends Component {
         icon: {
           primaryColor: "#22407F",
           secondaryColor: "#22407F",
-          size: "lg"
+          size: "md"
         },
         draggable: false,
         text: "FlatIron",
@@ -88,7 +88,7 @@ class MapQuestComponent extends Component {
         icon: {
           primaryColor: "#22407F",
           secondaryColor: "#22407F",
-          size: "lg"
+          size: "md"
         },
         draggable: false,
         text: "White House",

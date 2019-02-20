@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import EmpireStateImage from "../../images/buildings/empireState.jpeg";
-import { Grid, Cell } from "react-mdl";
+import { Grid, Cell, Navigation, CardActions, Button } from "react-mdl";
+import { Link } from "react-router-dom";
 
 class EmpireState extends Component {
   state = {};
@@ -87,6 +88,20 @@ class EmpireState extends Component {
               in 1986, and was ranked number one on the American Institute of
               Architects' List of America's Favorite Architecture in 2007.
             </p>
+            <Navigation>
+              <CardActions border>
+                <Button>
+                  {" "}
+                  <Link
+                    style={{ font: "Roboto", color: "gray" }}
+                    target="_blank"
+                    to="/agents"
+                  >
+                    <b>Get Some Help From Our Super Agents</b>
+                  </Link>
+                </Button>
+              </CardActions>
+            </Navigation>
           </Cell>
         </Grid>
       </div>

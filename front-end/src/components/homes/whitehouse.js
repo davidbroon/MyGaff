@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import whiteHouseImage from "../../images/buildings/whiteHouse.jpeg";
-import { Grid, Cell } from "react-mdl";
+import { Grid, Cell, Navigation, CardActions, Button } from "react-mdl";
+import { Link } from "react-router-dom";
 
 class WhiteHouse extends Component {
   state = {};
@@ -73,6 +74,20 @@ class WhiteHouse extends Component {
               2007, it was ranked second on the American Institute of Architects
               list of "America's Favorite Architecture".
             </p>
+            <Navigation>
+              <CardActions border>
+                <Button>
+                  {" "}
+                  <Link
+                    style={{ font: "Roboto", color: "gray" }}
+                    target="_blank"
+                    to="/agents"
+                  >
+                    <b>Get Some Help From Our Super Agents</b>
+                  </Link>
+                </Button>
+              </CardActions>
+            </Navigation>
           </Cell>
         </Grid>
       </div>

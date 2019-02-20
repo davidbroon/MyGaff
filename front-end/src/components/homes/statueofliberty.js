@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import statueOfLibertyImage from "../../images/buildings/statueOfLiberty.jpeg";
-import { Grid, Cell } from "react-mdl";
+import { Grid, Cell, Navigation, CardActions, Button } from "react-mdl";
+import { Link } from "react-router-dom";
 
 class StatueOfLiberty extends Component {
   state = {};
@@ -69,6 +70,20 @@ class StatueOfLiberty extends Component {
               National Park Service. Public access to the balcony around the
               torch has been barred since 1916.
             </p>
+            <Navigation>
+              <CardActions border>
+                <Button>
+                  {" "}
+                  <Link
+                    style={{ font: "Roboto", color: "gray" }}
+                    target="_blank"
+                    to="/agents"
+                  >
+                    <b>Get Some Help From Our Super Agents</b>
+                  </Link>
+                </Button>
+              </CardActions>
+            </Navigation>
           </Cell>
         </Grid>
       </div>

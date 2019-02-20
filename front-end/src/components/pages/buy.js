@@ -31,7 +31,7 @@ class Buy extends Component {
               width={"100%"}
               center={[40.7141667, -74.0063889]}
               baseLayer={"map"}
-              zoom={11}
+              zoom={7}
               apiKey={"BM60R2Aav4B7hIZ2SqV6OohRkWZJbWNx"}
             />
           </Cell>

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import FlatIronImage from "../../images/buildings/flatiron.jpeg";
-import { Grid, Cell } from "react-mdl";
+import { Grid, Cell, Navigation, CardActions, Button } from "react-mdl";
+import { Link } from "react-router-dom";
 
 class FlatIron extends Component {
   state = {};
@@ -50,6 +51,20 @@ class FlatIron extends Component {
               National Register of Historic Places in 1979, and was designated a
               National Historic Landmark in 1989.{" "}
             </p>
+            <Navigation>
+              <CardActions border>
+                <Button>
+                  {" "}
+                  <Link
+                    style={{ font: "Roboto", color: "gray" }}
+                    target="_blank"
+                    to="/agents"
+                  >
+                    <b>Get Some Help From Our Super Agents</b>
+                  </Link>
+                </Button>
+              </CardActions>
+            </Navigation>
           </Cell>
         </Grid>
       </div>

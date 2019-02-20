@@ -153,6 +153,61 @@
 .dialog {
   overflow: auto;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.main {
+    margin-left: 400px; 
+    font-size: 28px; 
+    padding: 0px 10px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:  rgb(45, 129, 185);
+    color: aliceblue;
+}
+ 
+
+.btn-container {
+    color: aliceblue;
+    background-color: antiquewhite;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-container {
+    color: aliceblue;
+    background-color: rgb(68, 29, 131);
+    padding: 20px, 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container{
+    color: aliceblue;
+    font-family: 'roboto', sans-serif;
+    background-color: rgb(68, 29, 131);
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+}
+
+a[href^="mailto"] { 
+    color: aliceblue;
+    font-family: 'roboto', sans-serif;
+ }
+ b{
+     font-family: 'roboto', sans-serif;
+ }
+
 
 
 

@@ -6,7 +6,7 @@ import backgroundImage from "../../images/buildings/streethighrise.jpg";
 class Landing extends Component {
   state = {};
   render() {
-    document.title = "Welcome Home";
+    document.title = "My Gaff";
     return (
       <div
         className="landing"
