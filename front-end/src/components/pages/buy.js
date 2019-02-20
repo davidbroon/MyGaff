@@ -7,6 +7,7 @@ import backgroundImage from "../../images/backgrounds/buyBackground.png";
 class Buy extends Component {
   state = {};
   render() {
+    document.title = "Find Your Way Home";
     return (
       <div
         style={{

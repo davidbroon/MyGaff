@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Grid, Cell, Layout, Navigation, Textfield } from "react-mdl";
-import backgroundImage from '../../images/buildings/streethighrise.jpg'
-
+import backgroundImage from "../../images/buildings/streethighrise.jpg";
 
 class Landing extends Component {
   state = {};
   render() {
+    document.title = "Welcome Home";
     return (
       <div
         className="landing"
@@ -17,8 +17,7 @@ class Landing extends Component {
       >
         <Layout
           style={{
-            background:
-              `url(${backgroundImage}) center / cover`,
+            background: `url(${backgroundImage}) center / cover`,
             height: "100%",
             width: "100%"
           }}
@@ -27,30 +26,29 @@ class Landing extends Component {
             <Cell col={12}>
               <div className="banner-text">
                 <h1>Find your way home</h1>
-                <hr/> 
-                
-                </div>
-                
-                <Navigation className="banner-nav">
+                <hr />
+              </div>
+
+              <Navigation className="banner-nav">
                 <Link className="buylinklanding" to="/">
                   Buy
                 </Link>
-                
+
                 <Link className="agentslinklanding" to="/agents">
                   Agent Finder
                 </Link>
-                
+
                 <Link className="morelinklanding" to="/more">
                   More
                 </Link>
-                <Textfield className="search-bar"
+                <Textfield
+                  className="search-bar"
                   onChange={() => {}}
                   label="Expandable Input"
                   expandable
                   expandableIcon="search"
-              />
+                />
               </Navigation>
-              
             </Cell>
           </Grid>
         </Layout>

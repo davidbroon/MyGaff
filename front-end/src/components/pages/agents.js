@@ -17,6 +17,7 @@ import backgroundImage from "../../images/backgrounds/agentBackground.png";
 class Agents extends Component {
   state = {};
   render() {
+    document.title = "Find Your Agent";
     return (
       <div
         style={{
