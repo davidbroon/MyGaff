@@ -9,10 +9,6 @@ import {
   CardActions,
   Button,
   Spinner,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogActions,
   Navigation
 } from "react-mdl";
 import { Link } from 'react-router-dom';
@@ -23,8 +19,6 @@ class Properties extends React.Component {
       properties: [],
       isLoaded: false
     };
-    this.handleOpenDialog = this.handleOpenDialog.bind(this);
-    this.handleCloseDialog = this.handleCloseDialog.bind(this);
   }
 
   callProperties = () => {
@@ -42,18 +36,6 @@ class Properties extends React.Component {
 
   componentDidMount() {
     this.callProperties();
-  }
-
-  handleOpenDialog() {
-    this.setState({
-      openDialog: true
-    });
-  }
-
-  handleCloseDialog() {
-    this.setState({
-      openDialog: false
-    });
   }
 
   render() {
@@ -99,61 +81,9 @@ class Properties extends React.Component {
                     </CardText>
                     <Navigation>
                     <CardActions border>
-                        <Button onClick={this.handleOpenDialog} colored
-                        raised
-                        ripple style={{position:"center"}}>
-                          More Information
-                        </Button> 
+                        <Button> <Link style={{font:"Roboto", color:"gray"}} target='_blank' to={p.link}><b>More Information</b></Link></Button> 
                     </CardActions>
                   </Navigation>
-                    <Dialog
-                      col={12}
-                      className="dialog"
-                      open={this.state.openDialog}
-                      style={{ overflowX: "auto", width:"50%" }}
-                    >
-                      <DialogTitle
-                        style={{
-                          background: `url(${p.image})`,
-                          width: "100%",
-                          height: "100%",
-                          backgroundRepeat: "no-repeat",
-                          position: "relative",
-                          backgroundPosition: "center center",
-                          backgroundsize: "fill",
-                          height: "200px"
-                        }}
-                      />
-                      <DialogContent>
-                        <center><b>{p.homeName}</b>
-                        <p>
-                          {p.address.line1}, {p.address.city}, {p.address.state}
-                          , {p.address.zip}
-                          <br />
-                          {p.price}
-                          <br />
-                          Bio: Lorem ipsum dolor sit amet, consectetur
-                          adipiscing elit. Suspendisse in ornare quam, eget
-                          elementum eros. Quisque vel semper ligula, ac commodo
-                          libero. Maecenas tincidunt quam massa, interdum
-                          rhoncus tellus
-                        </p>
-                        </center>
-                      </DialogContent>
-                      <Navigation style={{float:"right"}}>
-                      
-                       <DialogActions fullWidth>
-                        <Button type="button"><Link to="/agents" style={{color:"black"}}>
-                          Find an Agent to Help
-                          </Link>
-                        </Button>
-                        <Button type="button" onClick={this.handleCloseDialog}>
-                          Close
-                        </Button>
-                      </DialogActions>
-                      
-                      </Navigation>
-                    </Dialog>
                   </Card>
                 </Cell>
               </Grid>

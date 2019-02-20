@@ -19,13 +19,15 @@ public class Properties {
 	private Date DatePosted;
 	@Indexed(direction = IndexDirection.ASCENDING)
 	private String Price;
+	private String Link;
 	
-	public Properties(String HomeName, Address Address, Date DatePosted, String Price, String image) {
+	public Properties(String HomeName, Address Address, Date DatePosted, String Price, String image, String Link) {
 		this.HomeName = HomeName;
 		this.Address = Address;
 		this.DatePosted = DatePosted;
 		this.Price = Price;
 		this.image = image;
+		this.Link = Link;
 	}
 	
 
@@ -51,6 +53,10 @@ public class Properties {
 	
 	public String getImage() {
 		return image;
+	}
+	
+	public String getLink() {
+		return Link;
 	}
 	
 }

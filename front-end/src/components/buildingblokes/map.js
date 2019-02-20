@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Button from "react-mdl";
+import * as api from "../../utils/api";
 
 class MapQuestComponent extends Component {
   constructor(props) {
     super(props);
-    this.state = { ...props };
+    this.state = { ...props,
+      properties: [] };
   }
 
   render() {
