@@ -41,14 +41,16 @@ class Landing extends Component {
                 <Link className="morelinklanding" to="/more">
                   More
                 </Link>
-                <Textfield
-                  className="search-bar"
-                  onChange={() => {}}
-                  label="Expandable Input"
-                  expandable
-                  expandableIcon="search"
-                />
               </Navigation>
+
+              <Textfield
+                style={{ width: "60%", marginLeft: "20%", marginRight: "20%" }}
+                className="search-bar"
+                onChange={() => {}}
+                label="Expandable Input"
+                expandable
+                expandableIcon="search"
+              />
             </Cell>
           </Grid>
         </Layout>

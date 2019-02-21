@@ -6,7 +6,13 @@ class More extends Component {
   render() {
     document.title = "More";
     return (
-      <div>
+      <div
+        style={{
+          fontFamily: "'Roboto', sans-serif",
+          backgroundColor: "rgb(45, 129, 185)",
+          color: "aliceblue"
+        }}
+      >
         <div class="sidenav">
           <img
             style={{
@@ -30,7 +36,7 @@ class More extends Component {
               <h2>Full Stack Developer</h2>
             </header>
           </div>
-          <div class="btn-container">
+          <div class="btn-container" onMouseOver={this.mouseOver}>
             <a
               href="https://www.linkedin.com/in/david-brown-180325164/"
               target="_blank"
@@ -89,13 +95,16 @@ class More extends Component {
                 <b>
                   <u>Bethel School of Technology graduate:</u>
                 </b>{" "}
-                <br/><i>Technical Skills: </i>Languages / Frameworks HTML, CSS, JavaScript
-                (JS), Java, ReactJS, jQuery, Bootstrap, AJAX, Node, Mongodb,
-                Mongoose, WebAPI, Responsive Design, Flexbox, SQL, NoSQL<br/><i>
-                Technologies:</i> VisualStudio2018, Github, GitKraken, NPM, Atom,
-                Spring <br/><i>Other Skills:</i> Agile Methodologies, SCRUM
+                <br />
+                <i>Technical Skills: </i>Languages / Frameworks HTML, CSS,
+                JavaScript (JS), Java, ReactJS, jQuery, Bootstrap, AJAX, Node,
+                Mongodb, Mongoose, WebAPI, Responsive Design, Flexbox, SQL,
+                NoSQL
+                <br />
+                <i>Technologies:</i> VisualStudio2018, Github, GitKraken, NPM,
+                Atom, Spring <br />
+                <i>Other Skills:</i> Agile Methodologies, SCRUM
               </li>
-              
             </ul>
           </div>
           <div class="footer-container">

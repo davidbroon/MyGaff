@@ -41,7 +41,7 @@ class MapQuestComponent extends Component {
         icon: {
           primaryColor: "#22407F",
           secondaryColor: "#22407F",
-          size: "md"
+          size: "sm"
         },
         draggable: false,
         text: "Empire State",
@@ -57,12 +57,12 @@ class MapQuestComponent extends Component {
         icon: {
           primaryColor: "#22407F",
           secondaryColor: "#22407F",
-          size: "md"
+          size: "sm"
         },
         title: "hello",
         draggable: false,
         text: "Statue of Liberty",
-        position: "right",
+        position: "bottom",
         subtext: "money",
         type: "marker"
       })
@@ -73,11 +73,11 @@ class MapQuestComponent extends Component {
         icon: {
           primaryColor: "#22407F",
           secondaryColor: "#22407F",
-          size: "md"
+          size: "sm"
         },
         draggable: false,
         text: "FlatIron",
-        position: "right",
+        position: "left",
         subtext: "$190,000,000.00",
         type: "marker"
       })
@@ -88,7 +88,7 @@ class MapQuestComponent extends Component {
         icon: {
           primaryColor: "#22407F",
           secondaryColor: "#22407F",
-          size: "md"
+          size: "sm"
         },
         draggable: false,
         text: "White House",

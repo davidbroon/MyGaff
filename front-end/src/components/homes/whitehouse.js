@@ -23,10 +23,19 @@ class WhiteHouse extends Component {
             />
           </Cell>
           <Cell col={9}>
+          <div
+            style={{
+              fontFamily: "'Roboto', sans-serif",
+              backgroundColor: "#4144DD",
+              color: "aliceblue",
+              borderRadius: "10px"
+            }}>
             <h2>
               <center>The White House</center>
             </h2>
             <h3>Price: $2,386,876,712.00</h3>
+            </div>
+            <div style={{border:"1px solid #4144DD",borderRadius: "10px"}}>
             <p>
               The White House is the official residence and workplace of the
               President of the United States. It is located at 1600 Pennsylvania
@@ -88,6 +97,7 @@ class WhiteHouse extends Component {
                 </Button>
               </CardActions>
             </Navigation>
+            </div>
           </Cell>
         </Grid>
       </div>

@@ -23,10 +23,19 @@ class StatueOfLiberty extends Component {
             />
           </Cell>
           <Cell col={9}>
+          <div
+            style={{
+              fontFamily: "'Roboto', sans-serif",
+              backgroundColor: "#4144DD",
+              color: "aliceblue",
+              borderRadius: "10px"
+            }}>
             <h2>
               <center>Statue Of Liberty</center>
             </h2>
             <h3>Price: $45,000,000.00</h3>
+            </div>
+            <div style={{border:"1px solid #4144DD",borderRadius: "10px"}}>
             <p>
               The Statue of Liberty (Liberty Enlightening the World; French: La
               Liberté éclairant le monde) is a colossal neoclassical sculpture
@@ -84,6 +93,7 @@ class StatueOfLiberty extends Component {
                 </Button>
               </CardActions>
             </Navigation>
+            </div>
           </Cell>
         </Grid>
       </div>

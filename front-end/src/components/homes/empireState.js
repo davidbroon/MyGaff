@@ -23,10 +23,20 @@ class EmpireState extends Component {
             />
           </Cell>
           <Cell col={9}>
-            <h2>
-              <center>Empire State Building</center>
-            </h2>
-            <h3>Price: $534,000,000.00</h3>
+            <div
+            style={{
+              fontFamily: "'Roboto', sans-serif",
+              backgroundColor: "#4144DD",
+              color: "aliceblue",
+              borderRadius: "10px"
+            }}>
+              <h2>
+                <center>Empire State Building</center>
+              </h2>
+              <h3>Price: $534,000,000.00</h3>
+            </div>
+            <div 
+            style={{border:"1px solid #4144DD",borderRadius: "10px"}}>
             <p>
               Shreve, Lamb & Harmon and completed in 1931, the building has a
               roof height of 1,250 feet (380 m) and stands a total of 1,454 feet
@@ -102,6 +112,7 @@ class EmpireState extends Component {
                 </Button>
               </CardActions>
             </Navigation>
+            </div>
           </Cell>
         </Grid>
       </div>
