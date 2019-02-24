@@ -1,0 +1,200 @@
+.banner-text {
+  background-color: antiquewhite;
+  opacity: 0.8;
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+}
+.banner-text h1 {
+  font-size: 66px;
+  font-weight: bold;
+  color: cadetblue;
+}
+.banner-text hr {
+  border-top: 5px dotted cadetblue;
+  width: 50%;
+  margin: auto;
+}
+.banner-nav {
+  width: 60%;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+.buylinklanding {
+  border: 1px solid cadetblue;
+  background-color: antiquewhite;
+  opacity: 0.8;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+.agentslinklanding {
+  border: 1px solid cadetblue;
+  background-color: antiquewhite;
+  opacity: 0.8;
+  width: 50%;
+  margin: 30px;
+  padding: 10px;
+  text-align: center;
+}
+.morelinklanding {
+  border: 1px solid cadetblue;
+  background-color: antiquewhite;
+  opacity: 0.8;
+  width: 50%;
+  margin: 30px;
+  padding: 10px;
+  text-align: center;
+}
+.search-bar {
+  border: 1px solid cadetblue;
+  background-color: antiquewhite;
+  opacity: 0.8;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+.capt {
+  border: 5px, solid, black;
+}
+.contact-captain-body {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+}
+.contact-captain-grid {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 550px;
+  background: white;
+  color: black;
+  margin-bottom: 20px;
+}
+.contact-captain-grid h2 {
+  font-family: "Anton", sans-serif;
+}
+.contact-captain-grid p {
+  font-family: "Oxygen", sans-serif;
+  font-weight: bold;
+}
+.contact-captain-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+.contact-captain-list {
+  font-size: 66px;
+}
+.contact-superman-body {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+}
+.contact-superman-grid {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 550px;
+  background: white;
+  color: black;
+  margin-bottom: 20px;
+}
+.contact-superman-grid h2 {
+  font-family: "Anton", sans-serif;
+}
+.contact-superman-grid p {
+  font-family: "Oxygen", sans-serif;
+  font-weight: bold;
+}
+.contact-superman-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+.contact-superman-list {
+  font-size: 66px;
+}
+.privacy-grid {
+  text-align: center;
+  justify-content: center;
+  background: white;
+  color: black;
+  margin-bottom: 20px;
+}
+.privacy-grid h2 {
+  text-align: left;
+}
+.privacy-grid hr {
+  border-top: 3px solid black;
+  width: 90%;
+  margin: auto;
+}
+.privacy-grid p {
+  font-family: "Oxygen", sans-serif;
+}
+.footerlink {
+  font-family: "Oxygen", sans-serif;
+  padding-right: 20px;
+}
+.cardTitle {
+  border: 5px solid #3e2b14;
+  padding: 10px;
+  font-weight: bold;
+}
+.dialog {
+  overflow: auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  margin-left: 400px;
+  font-size: 28px;
+  padding: 0px 10px;
+}
+
+.btn-container {
+  color: aliceblue;
+  background-color: antiquewhite;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header-container {
+  color: aliceblue;
+  background-color: rgb(68, 29, 131);
+  padding: 20px, 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  color: aliceblue;
+  font-family: "roboto", sans-serif;
+  background-color: rgb(68, 29, 131);
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+}
+
+a[href^="mailto"] {
+  color: aliceblue;
+  font-family: "roboto", sans-serif;
+}
+b {
+  font-family: "roboto", sans-serif;
+}
