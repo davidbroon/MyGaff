@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import Button from "react-mdl";
-import * as api from "../../utils/api";
 
 class MapQuestComponent extends Component {
   constructor(props) {
@@ -31,10 +28,6 @@ class MapQuestComponent extends Component {
       layers: L.mapquest.tileLayer(this.state.baseLayer),
       zoom: this.state.zoom
     });
-
-    function findLinkIdCallback(error, response) {
-      console.log(response);
-    }
 
     L.mapquest
       .textMarker([40.748817, -73.985428], {

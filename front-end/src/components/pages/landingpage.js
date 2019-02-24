@@ -2,9 +2,28 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Grid, Cell, Layout, Navigation, Textfield } from "react-mdl";
 import backgroundImage from "../../images/buildings/streethighrise.jpg";
-
+import $ from "jquery";
 class Landing extends Component {
-  state = {};
+  constructor(props) {
+    super(props);
+    this.state = {};
+
+    this.performSearch();
+  }
+
+  performSearch() {
+    console.log("saldkfjasdl");
+    const urlString = "https://localhost8080:properties/all";
+    $.ajax({
+      url: urlString,
+      success: searchResults => {
+        console.log("successfully grabbed data");
+      },
+      error: (xhr, status, err) => {
+        console.error("failed to fetch data");
+      }
+    });
+  }
   render() {
     document.title = "My Gaff";
     return (

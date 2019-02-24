@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @Document(collection = "fruits")
 public class Properties {
 	@Id
-	private String id; 
+	private String _id; 
 	@JsonProperty  
 	private String image;
 	private String HomeName;
@@ -21,7 +21,8 @@ public class Properties {
 	private String Price;
 	private String Link;
 	
-	public Properties(String HomeName, Address Address, Date DatePosted, String Price, String image, String Link) {
+	public Properties(String _id, String HomeName, Address Address, Date DatePosted, String Price, String image, String Link) {
+		this._id = _id;
 		this.HomeName = HomeName;
 		this.Address = Address;
 		this.DatePosted = DatePosted;
@@ -31,8 +32,8 @@ public class Properties {
 	}
 	
 
-	public String getId() {
-		return id;
+	public String get_Id() {
+		return _id;
 	}
 
 	public String getHomeName() {

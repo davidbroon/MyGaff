@@ -15,16 +15,15 @@ class More extends Component {
       >
         <div class="sidenav">
           <img
+            alt="david portrait"
             style={{
               width: "30%",
               height: "100%",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center center",
               backgroundsize: "cover",
-              position: "fixed",
-              height: "100%"
+              position: "fixed"
             }}
-            alt="David Brown Profile Picture"
             src={David}
           />
         </div>
@@ -41,6 +40,7 @@ class More extends Component {
               href="https://www.linkedin.com/in/david-brown-180325164/"
               target="_blank"
               class="btn btn-primary"
+              rel="noopener noreferrer"
             >
               <i id="LinkedIn" class="fa fa-linkedin" />
               <b> LinkedIn </b>
@@ -49,6 +49,7 @@ class More extends Component {
               href="https://github.com/davidbroon?tab=repositories"
               target="_blank"
               class="btn btn-primary"
+              rel="noopener noreferrer"
             >
               <i id="gitHub" class="fa fa-github" />
               <b> GitHub</b>

@@ -18,7 +18,7 @@ class PropertyList extends Component {
   }
   render() {
     return (
-      <div key={this.props.p.id}>
+      <div key={this.props.p._id}>
         <Grid className="demo-grid-2">
           <Cell col={2}>
             <Card
@@ -35,7 +35,6 @@ class PropertyList extends Component {
                 style={{
                   background: `url(${this.props.p.image})`,
                   width: "100%",
-                  height: "100%",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center center",
                   backgroundsize: "cover",
