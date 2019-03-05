@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import David from "../../images/headshots/IMG_1646 copy.JPG";
+import David from "../../images/headshots/davidShot.jpg";
 
 class More extends Component {
   state = {};
@@ -17,7 +17,7 @@ class More extends Component {
           <img
             alt="david portrait"
             style={{
-              width: "30%",
+              width: "38%",
               height: "100%",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center center",

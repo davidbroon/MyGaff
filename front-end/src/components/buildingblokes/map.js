@@ -39,7 +39,7 @@ class MapQuestComponent extends Component {
         draggable: false,
         text: "Empire State",
         position: "right",
-        subtext: <a href="/empireState">Open here</a>,
+        subtext: "$534,000,000.00",
         type: "marker",
         url: "superman"
       })
@@ -56,7 +56,7 @@ class MapQuestComponent extends Component {
         draggable: false,
         text: "Statue of Liberty",
         position: "bottom",
-        subtext: "money",
+        subtext: "$45,000,000.00",
         type: "marker"
       })
       .addTo(L.mapquest.Map.getMap());
