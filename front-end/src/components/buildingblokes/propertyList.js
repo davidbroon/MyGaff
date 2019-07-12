@@ -8,7 +8,7 @@ import {
   CardActions,
   Button,
   Navigation
-} from "react-mdl";
+} from "react-mdl"; 
 import { Link } from "react-router-dom";
 
 class PropertyList extends Component {

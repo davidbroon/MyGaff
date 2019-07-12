@@ -6,7 +6,7 @@ class Properties extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      properties: [],
+      properties: [], 
       isLoaded: false
     };
   }
