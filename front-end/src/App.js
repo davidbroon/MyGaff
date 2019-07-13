@@ -22,6 +22,7 @@ class App extends Component {
             title="My Gaff"
             scroll
             style={{ color: "white", marginBottom: "2%", position: "fixed" }}
+            
           >
             <Navigation>
               <Link className="homelink" to="/home">

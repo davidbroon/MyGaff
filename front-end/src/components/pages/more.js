@@ -112,12 +112,12 @@ class More extends Component {
             <footer>
               <span class="glyphicon glyphicon-envelope">
                 <a href="mailto:davidbrown090391@gmail.com">
-                  <b>davidbrown090391@gmail.com</b>
+                  <b>davidbrowncodes@gmail.com</b>
                 </a>
               </span>
               {" || "}
               <span class="glyphicon glyphicon-phone-alt">
-                <b>(530)355-9984</b>
+                <b>(123)456-7890</b>
               </span>
             </footer>
           </div>
